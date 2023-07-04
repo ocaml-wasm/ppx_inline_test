@@ -7,5 +7,7 @@
  (js_of_ocaml
   (flags --no-sourcemap)
   (javascript_files runtime.js))
+ (wasm_of_ocaml (flags --no-sourcemap) (javascript_files runtime.js)
+  (wasm_files runtime.wat))
  (libraries base)
  (preprocess no_preprocessing))
