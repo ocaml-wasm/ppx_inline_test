@@ -151,6 +151,8 @@ module Has_tests =
 let all_tags =
   [ "no-js"
   ; "js-only"
+  ; "no-wasm"
+  ; "wasm-only"
   ; "64-bits-only"
   ; "32-bits-only"
   ; "fast-flambda"
