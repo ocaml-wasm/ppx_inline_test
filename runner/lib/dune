@@ -4,6 +4,10 @@
   (names am_testing))
  (name ppx_inline_test_runner_lib)
  (public_name ppx_inline_test.runner.lib)
+ (wasm_of_ocaml
+  (flags --no-sourcemap)
+  (wasm_files runtime.wat)
+  (javascript_files runtime.js))
  (js_of_ocaml
   (flags --no-sourcemap)
   (javascript_files runtime.js))
